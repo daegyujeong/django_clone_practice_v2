@@ -1,0 +1,41 @@
+<h3>{{title}}</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>
+        <h2>
+          X List
+        </h2>
+
+      </th>           
+      <th>
+
+      </th>             
+    </tr>
+  </thead>
+    <tr class="header">
+      <td>
+        <span>Comment</span>
+      </td>
+      <td>
+        <span>User</span>
+      </td>
+    </tr>  
+
+
+  <tbody>  
+    {% for tweet in tweets %}
+    <tr>
+      <td>
+        <a href="/{{tweet.pk}}">
+          {{tweet.payload}}<br />
+        >
+      </td>
+      <td>
+        <span>{{tweet.user}}<br /></span>
+      </td>
+    </tr> 
+    {% endfor %}
+  </tbody>
+</table>       
