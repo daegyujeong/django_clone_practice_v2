@@ -43,8 +43,9 @@ CUSTOMS_APPS = [
     "tweets.apps.TweetsConfig",
     "common.apps.CommonConfig",
 ]
+THIRD_PARTY_APPS = ["rest_framework",]
 
-INSTALLED_APPS = SYSTEM_APPS + CUSTOMS_APPS
+INSTALLED_APPS = SYSTEM_APPS + CUSTOMS_APPS + THIRD_PARTY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
