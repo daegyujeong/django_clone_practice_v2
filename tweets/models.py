@@ -1,6 +1,7 @@
 from django.db import models
 from common.models import CommonModel
 
+
 class Tweet(CommonModel):
     """ Tweet Model Definition """
 
